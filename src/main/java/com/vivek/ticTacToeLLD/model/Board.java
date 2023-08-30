@@ -36,7 +36,7 @@ public class Board {
                 else{
                     System.out.print("    ");
                 }
-                System.out.print(" | ");
+                if(j < size-1) System.out.print(" | ");
             }
             System.out.println();
         }
