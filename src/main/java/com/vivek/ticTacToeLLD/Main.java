@@ -9,6 +9,6 @@ public class Main {
         if(startGame.equalsIgnoreCase("match is draw!!!"))
             System.out.println(ConsoleColorConstants.YELLOW_BOLD + startGame + ConsoleColorConstants.RESET);
         else
-            System.out.println(ConsoleColorConstants.GREEN_BOLD+"game winner is : "+game.startGame()+ConsoleColorConstants.RESET);
+            System.out.println(ConsoleColorConstants.GREEN_BOLD+"game winner is : "+startGame+ConsoleColorConstants.RESET);
     }
 }

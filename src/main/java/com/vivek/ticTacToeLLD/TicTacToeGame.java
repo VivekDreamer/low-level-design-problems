@@ -22,7 +22,7 @@ public class TicTacToeGame {
     private void initializeGame() {
         //here we are creating only two player...
         //however you can add more than two players
-        System.out.println("Let's play Tic Tac Toe!");
+        System.out.println(ConsoleColorConstants.WHITE_BOLD_BRIGHT+"Let's play Tic Tac Toe!"+ConsoleColorConstants.RESET);
         players = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
         int size;
@@ -35,6 +35,17 @@ public class TicTacToeGame {
         }while(size <= 1);
         
         System.out.println();
+        // System.out.println("Do you want to play against the computer?");
+        // System.out.print("Press 1 for Computer or any other number for Player: ");
+        // int choice = scanner.nextInt();
+        // System.out.println();
+        // if(choice == 1){
+        //     //bot will play here
+        // }
+        // else{
+        //     //normal player
+
+        // }
         System.out.print("Player 1, what is your name? ");
         String player1Name = scanner.next();
         System.out.println();
