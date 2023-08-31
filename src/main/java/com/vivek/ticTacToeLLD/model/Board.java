@@ -3,6 +3,8 @@ package com.vivek.ticTacToeLLD.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.vivek.ConsoleColorConstants;
+
 public class Board {
     public int size;
     public PlayingPiece[][] board;
@@ -27,11 +29,16 @@ public class Board {
         }
         return freeCells;
     }
+
     public void printBoard(){
         for(int i = 0; i < size; i++){
             for(int j = 0; j < size; j++){
                 if(board[i][j] != null){
-                    System.out.print(board[i][j].pieceType.name() + "   ");
+                    if(board[i][j].pieceType.name().equalsIgnoreCase("X"))
+                        System.out.print(ConsoleColorConstants.RED_BOLD+board[i][j].pieceType.name()+ConsoleColorConstants.RESET);
+                    else
+                         System.out.print(ConsoleColorConstants.GREEN_BOLD+board[i][j].pieceType.name()+ConsoleColorConstants.RESET);
+                    System.out.print("   ");
                 }
                 else{
                     System.out.print("    ");
