@@ -6,6 +6,8 @@ import java.util.Map;
 //Least Recently Used Cache is implemented...Using HashMap and Doubly LinkedList.
 public class LRUCache {
 
+    //operations to be performed
+    //1. get(key) -> return the value and if not presenyt 
     Map<Integer,Node> cache = new HashMap<>();
     Node head = new Node(0, 0); //dummy head node
     Node tail = new Node(0,0);  //dummy tail node
